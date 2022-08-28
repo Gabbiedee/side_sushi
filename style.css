@@ -1,0 +1,172 @@
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    /* overflow: hidden */
+}
+
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Serif:ital@1&display=swap');
+
+
+
+.bg-image {
+display: flex;
+flex-direction: column;
+background-image: url('./images/restaurant\ 1.png');
+background-position: center;
+background-repeat: no-repeat;
+background-size: cover;
+height: 100vh;
+width: 100vw;
+position: relative;
+top: 0;
+left: 0;
+}
+
+.bg-text{
+    font-family: 'Mulish';
+    color: white;
+    position: absolute;
+    top: 200px;
+    left: 300px;
+    width: 830px;
+    height: 75px;
+}
+
+.bg-text .head{
+font-weight: 400;
+font-size: 50px;
+line-height: 70.3px;
+padding-left: 100px;
+margin-bottom: 20px;
+}
+
+.bg-text .content{
+    text-align: center;
+    font-weight: 200;
+    font-size: 16px;
+    line-height: 31px;
+    width: 600px;
+    padding-left: 120px;
+}
+
+.icons{
+    font-size: 2rem;
+    position: absolute;
+    top: 300px;
+    left: 0;
+    display: flex;
+    align-items: center;
+
+}
+
+.icons a{
+    color: white;
+}
+
+.icons .myleft{
+    position: relative;
+    left: 30px;
+}
+
+.icons .myright{
+    position: relative;
+    left: 600px;
+}
+
+.bg-button{
+    display: flex;
+    position: relative;
+    top: 350px;
+    left: 450px;
+    width: 250px;
+    height: 80px;  
+}
+button{
+    border-radius: 3px;
+    border: none;
+    background-color: white;
+    padding: 5px  50px;
+    height: 40px;
+    margin: 30px 20px;
+    font-size: 1rem;
+    text-transform: uppercase;
+}
+
+button a{
+    text-decoration: none;
+    color: black;
+}
+
+button:hover{
+    background-color: #F1D5BB;
+    border: #F1D5BB solid;
+    color: black;
+}
+
+@media screen and (max-width: 600px) {
+
+    .bg-text{
+        top: 150px;
+        left: 70px;
+        width: 400px;
+        height: 40px;
+    }
+
+    .bg-text .head{
+        font-weight: 100;
+        font-size: 1.5rem;
+        line-height: 30px;
+        padding-left: 50px;
+        }
+
+
+    .bg-text .content{
+        text-align: center;
+        font-weight: 50;
+        font-size: 12px;
+        line-height: 15px;
+        width: 400px;
+        padding-left: 0px;
+    }
+
+    .icons{
+        font-size: 2rem;
+        position: absolute;
+        top: 225px;
+        left: 0;
+        display: flex;
+        align-items: center;
+    
+    }
+
+    
+    .icons .myleft{
+        position: relative;
+        left: 10px;
+    }
+    
+    .icons .myright{
+        position: relative;
+        left: 240px;
+    }
+    
+    .bg-button{
+        display: flex;
+        position: relative;
+        top: 270px;
+        left: 170px;
+        width: 150px;
+        height: 40px;  
+    }
+    button{
+        border-radius: 3px;
+        background-color: white;
+        padding: 10px  35px;
+        height: 40px;
+        margin: 10px;
+        font-size: .5rem;
+        text-transform: uppercase;
+    }
+}
+
