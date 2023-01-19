@@ -104,11 +104,25 @@ button:hover{
     color: black;
 }
 
-@media screen and (max-width: 600px) {
+@media screen and (min-width: 280px) and (max-width: 600px) {
+
+    .bg-image {
+        display: flex;
+        flex-direction: column;
+        background-image: url('./images/restaurant\ 1.png');
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        height: 118%;
+        width: 480px;
+        position: fixed;
+        top: 0;
+        left: 0;
+        }
 
     .bg-text{
-        top: 150px;
-        left: 70px;
+        top: 200px;
+        left: 20px;
         width: 400px;
         height: 40px;
     }
@@ -124,38 +138,23 @@ button:hover{
     .bg-text .content{
         text-align: center;
         font-weight: 50;
-        font-size: 12px;
+        font-size: 16px;
         line-height: 15px;
-        width: 400px;
-        padding-left: 0px;
+        width: 350px;
+        padding: 0 0 0 15px;
     }
 
     .icons{
-        font-size: 2rem;
-        position: absolute;
-        top: 225px;
-        left: 0;
-        display: flex;
-        align-items: center;
+        display: none;
     
     }
 
-    
-    .icons .myleft{
-        position: relative;
-        left: 10px;
-    }
-    
-    .icons .myright{
-        position: relative;
-        left: 240px;
-    }
     
     .bg-button{
         display: flex;
         position: relative;
-        top: 270px;
-        left: 170px;
+        top: 400px;
+        left: 80px;
         width: 150px;
         height: 40px;  
     }
@@ -165,8 +164,41 @@ button:hover{
         padding: 10px  35px;
         height: 40px;
         margin: 10px;
-        font-size: .5rem;
+        font-size: 1rem;
         text-transform: uppercase;
     }
+    
+}
+
+@media (min-width: 700px) and (max-width: 1024px){
+
+    .bg-image {
+        height: 100vh;
+        width: 100vw;
+        position: fixed;
+        top: 0;
+        left: 0;
+        }
+
+        .bg-text{
+            top: 200px;
+            left: 50px;
+        }
+
+        .icons{
+            display: none;
+        
+        }
+
+        .bg-button{
+            display: flex;
+            position: relative;
+            top: 500px;
+            left: 30%;
+            width: 200px;
+            height: 50px;  
+        }
+
+        
 }
 

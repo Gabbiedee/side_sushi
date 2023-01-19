@@ -166,7 +166,8 @@ footer{
     main{
         display: flex;
         flex-direction: column;
-        height: 100%;
+        height: 800px;
+        width: 137% ;
         /* width: 100%; */
         /* margin-left:-15px ; */
     
@@ -175,23 +176,23 @@ footer{
     .nav-bar{
         margin: 0;
         width: 100%;
-        height: 50px;
-        background-color: black;
-        border-radius: 0;
+        height: 100px;
         display: flex;
-        flex-direction: row;
         justify-content: center;
+        align-items: center;
         }
 
         .navbar-link{
-            width: 100vw;
+            width: 100%;
             height: 100%;
-            padding: 5px;
-            margin:  5px;
+            padding: 20px 10px 0px ;
+            margin:  10px 5px;
         }
 
         .navbar-link img{
-            width: 5px;
+            width: 40px;
+            height: 50px;
+            margin: 0px 5px;
         }
        
         .menu-head p{
@@ -207,24 +208,61 @@ footer{
         }
 
         .images{
-            margin-top: 10px;
+            height: 400px;
+            padding: 10px;
             display: grid;
             grid-template-columns: auto auto;
-            grid-gap: 10px;
+            grid-gap: 5px;
             text-align: center;
         }
 
         .images img{
-            width: 100px;
+            width: 150px;
+            height: 200px;
+            border-radius: 5px;
         }
 
-        footer{
+        .button{
             position: relative;
-            bottom: 0;
-            left: 150px;
-            margin-left: 0px;
-            margin-top: 0px;
+            bottom: -110%;
+            margin:0 auto;
+            }
+            
+
+        footer{
+            position: default;
+            bottom: -380px;
+            margin: 0 auto;
         }
+}
+
+@media (min-width: 700px) and (max-width: 1024px){
+    main{
+        display: flex;
+        height: 900px;
+        width: 100vw;
+        background-color: white;
+        overflow-y: hidden ;
+
+    }
+    .nav-bar{
+        margin: 20px 30px 0 50px;
+        height: 800px;
+        }
+
+        .images{
+            grid-template-columns: auto auto auto;
+        }
+
+        .images img{
+            width: 170px;
+        }
+        
+    
+    footer{
+        margin-left: 200px;
+        margin-top: 0px;
+  }
 }
 
 
